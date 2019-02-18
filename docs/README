@@ -1,0 +1,15 @@
+Руководство по созданию документации:
+    https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+
+
+# Открываем в консоли папку docs:
+ $cd <path_to>/VNetworkData/docs
+
+# Можем автоматически сгенерировать *.rst файлы для новых модулей:
+# (Чтобы ранее созданные *.rst файлы могли быть изменены, необходимо добавить ключ -f.)
+ $sphinx-apidoc -e -M -o source/ ../src/
+
+# Генерируем саму документацию в папку build/html:
+ $make html
+
+# Открываем build/html/index.html и наслаждаемся!
